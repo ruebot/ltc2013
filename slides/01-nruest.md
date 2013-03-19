@@ -20,9 +20,9 @@
 ## _Building a Resilient Data_
 ## _Store North of the Border_
 
-Nick Ruest, York University
+Nick Ruest (@ruebot), York University
 
-John Fink, McMaster University
+John Fink (@adr), McMaster University
 
 !SLIDE center
 .notes Little bit of an overview here. What I am going to do in my portion of the presentation is go over some background info and try and provide some context at the same time. Then a little bit later, I'll finally get to what we are trying to do. After that, John is going to get into the technology stack, and all the great stuff behind that.

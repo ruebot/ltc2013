@@ -6,4 +6,4 @@ Nick Ruest (Twitter: [@ruebot](http://twitter.com/ruebot) / Github: [ruebot](htt
 
 John Fink (Twitter: [@adr](http://twitter.com/adr) / Github: [jbfink](http://github.com/jbfink))
 
-[Download slides](hdl:link:to:yorkspace)
+[Download slides](http://hdl.handle.net/10315/21082)
