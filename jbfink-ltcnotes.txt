@@ -1,0 +1,5 @@
+Title: Strong and Free: Building a Resilient Data Store North of the Border
+
+Abstract: This session will discuss cloud computing with a particular emphasis on locally implementable cloud technologies and how Permafrost, a new initiative in Ontario, is leveraging cheap hardware to build a resilient data store.
+
+Longer description: "Cloud technologies are an attractive way to build infrastructure with a minimum of fuss, but there are instances in which the cloud can fail to live up to expectations, or where legal or ethical considerations make it difficult to trust outside parties. It's possible to build a cloud infrastructure within your institution, and there are exciting new hardware and software developments that put local cloud implementations within easy (or easier) reach for libraries. This session will discuss the problems and opportunities with the cloud, specific strategies and technology for local cloud installations, and will also focus on the Permafrost project, a cooperative effort by some Ontario academic institutions to build a cheap, redundant, disparate, multi-terabyte data store.

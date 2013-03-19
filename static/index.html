@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Strong and Free: Building a Resilient Data Store North of the Border</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  
+    
+  
+
+  
+    <link rel="stylesheet" href="./file/style.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="slides/01-nruest/1">
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Lobster::latin', 'Open+Sans::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+</script>
+</div>
+</div><div class="slide" data-transition="none"><div class="content title-slide" ref="slides/01-nruest/2">
+<p class="notes">You are not an imposter. What you have to say is important. John and I are here today to talk about a project we're working on with the Ontario Council of University Libraries; OCUL represents the 21 university libraries in Ontario, Canada. The project is not officially off the ground yet, but nearly there. We had hoped to give a little more, stuff like what we're going to talk about doesn't come in over night. This is TOTALLY NOT VAPORWARE.</p>
+
+<h1>Strong and Free:</h1>
+
+<h2><em>Building a Resilient Data</em></h2>
+
+<h2><em>Store North of the Border</em></h2>
+
+<p>Nick Ruest, York University</p>
+
+<p>John Fink, McMaster University</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/3">
+<p class="notes">Little bit of an overview here. What I am going to do in my portion of the presentation is go over some background info and try and provide some context at the same time. Then a little bit later, I'll finally get to what we are trying to do. After that, John is going to get into the technology stack, and all the great stuff behind that.</p>
+
+<h1>Overview</h1>
+
+<h3>Background</h3>
+
+<h3>Context</h3>
+
+<h3>What we're trying to do</h3>
+
+<h3>Technology Stack</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/4">
+<p class="notes">What I want to do here is get a show of idea of how and if other folks have begun thinking about this. So, just raise your hands where applicable. Question 1: How much storage do you anticipate needing in 3 years? 10T or less, 10s of T, 100s of T, 10s of P, 100s of P? Question 2: Are your storage needs for large object, small objects, or combination of both? Question 3: Where do you look for storage solutions? Library IT, Campus IT, Partnerships, Commercial?</p>
+
+<h1>Background</h1>
+
+<p>I have some questions for <em>you</em>!!!</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/5">
+<p class="notes">I'm going to go a couple of tangents here before I get to the meat of the presentations. So, please bear with me and hopefully this will all make sense in the end. In my first tangent, I'm going to try and convey some broad observations about working in two completely different organizations. I am not trying to say one organization is better than the other, or get up here and pile on McMaster, because I'm not sure how much more they can take. And! In all honestly, I loved the team of folks I worked with there. I just didn't like this one guy.</p>
+
+<h1>What I've learn about two very different organizations</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/6">
+<p class="notes">You can be really bleeding edge. Jump on every new technology the second it comes out. And maybe even run your production servers on Arch, updating twice a day. Or you can be slow as molasses, overly-cautious to a fault, and extremely conservative; like only upgrading your Wordpress instance one a year. NO! NO! NO! There has to be a balance somewhere in there. Ideally, something with balanced traits: lean, agile, nimble, responsive, adaptive. </p>
+
+<h1>Movement</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/7">
+<p class="notes">Ego is so incredibly counter productive. I <em>hate</em> <em>hate</em> <em>hate</em> EGO. Who cares if you are the first to do buy something. Who cares if you were the first to implement something. Don't micromanage, and control access to a team just because you're threatened by other people. What is more import is our community. Our users. Ego gets in the of doing really awesome things, but most importantly it really gets in the way of our values and ethics of our profession, and at the worst of times is a complete disaster.</p>
+
+<h1>Ego</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="slides/01-nruest/8">
+<p class="notes">That whole strengths and weaknesses thing. Organization A is really good at this one thing, but really horrible at this other thing. Organization B is really good at that thing Organization A horrible at, and Organization A really good at that thing Organization B is horrible at. They should totally talk. They should collaborate on this stuff!</p>
+
+<h1>Collaboration</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/9">
+<p class="notes">Now, time for tangent number two; SUSTAINABILITY!!! Or, where I try to show how I learned how to distill a 105 page report to 5 talking points - Blue Ribbon Task Force Report on Sustainable Digital Preservation and Access. If Dorothea is in the room, I hope I make her proud :-)</p>
+
+<h1>Sustainability</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/10">
+<p class="notes">ask audience - how many of you have preservation written into their strategic plan</p>
+
+<h2><em><strong>Recognition</strong></em> of the benefits of preservation by decision makers</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/11">
+<p class="notes">ask audience - how many of you have a committee, or group that evaluates digitization projects</p>
+
+<h2>a <em><strong>Process</strong></em> for <strong>Selecting</strong> digital materials with long-term value</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/12">
+<p class="notes">ask audience - does your administration (library or university) truly understand the responsibility in stewarding cultural heritage? is there funding available?</p>
+
+<h2><em><strong>Incentive</strong></em> for decision makers to preserve in the public interest</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/13">
+<p class="notes">ask audience - how many of you have operational conditions for digital preservation (committees, working groups, strategy/implementation plan/plicy)?</p>
+
+<h2>appropriate <em><strong>Organization</strong></em> and <em><strong>Governance</strong></em> of digital preservation activities</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/14">
+<p class="notes">ask audience - how many of you have an ongoing budget line for digital preservation?</p>
+
+<h2>mechanisms to secure an ongoing, efficient <em><strong>Allocation</strong></em> of <em><strong>Resources</strong></em> for digital preservation activities</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/15">
+<p class="notes">How do those those 5 points look for you at your org? My org looks pretty good on most of them. Since I'm a bit of socialist, and care about my fellow man, what about other folks in the consortia? Wouldn't it be easier to work together in a consortium to take care of this instead of reinventing the wheel locally at each institution?</p>
+
+<h1>Locally or Consortially?</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/16">
+<p class="notes">When I was back a McMaster we had about 20TB of data that we needed to have a preservation copy stored somewhere. Duracloud/portico, etc where not an option due to cost (I'll speak more to that in a bit). I knew that a Scholars Portal was going through TRAC Certification (trustworthy digital repository), so I asked a colleague there what they were doing for off-site preservation. Long story short, we realized that our "collections" were around the same size, and initially planned on mirroring our content at each institution. From there (after talking to our bosses about this, it expanded into a conversation into how can we do this cosortially, and we've been working on that ever since.</p>
+
+<h1>Hacking Organizations</h1>
+
+<h2>...or how Nick is incredibly naive</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/17">
+<h1>Get to the point man!</h1>
+
+<h2>What are you trying to do!?</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/18">
+<p class="notes">This is a shameless rip-off. Canadian version of the San Diego Super Computing Cloud Storage Services (those rad dudes out at UCSD). Yes we have blessings! We're working with them administratively and technically.</p>
+
+<p><img src="./file/slides/images/maple_leaf.png" width="398" height="400" alt="images/maple_leaf.png"/>
+
+<p>CLOUD.SDSC.EDU</p>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/19">
+<p class="notes">We've identified a need to provide archival storage capacity for digitized and born-digital collections. Right now, we have a few options, but they fall between the polar extremes of Glacier (at $10/TB) or DuraCloud using Rackspace or S3 (at $1300/TB). Duracloud/S3/Rackspace are not sustainable as collections grow in size, and Glacier is not sustainable insofar as lacking the ability to audit fixity information in a way that is not cost prohibitive due to bandwidth costs. Moreover, all of these solutions are not within Canadian jurisdiction. We need something that is not susceptible to the Patriot Act and the like.</p>
+
+<h1>Our Context</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/20">
+<p class="notes">We are now looking at more than 10 years for some libraries engaging in digitization projects, others engaging in mass digitization projects, others acquiring massive born-digital collections of audio and video, and university libraries now engaging in research data archiving. Moreover, long-term preservation of digital content requires active management, which requires facilities for storing digital content online, monitoring its fixity, and migrating to new formats over time.</p>
+
+<h1>Our needs</h1>
+
+<h3>Small digitization projects</h3>
+
+<h3>Mass digitization projects</h3>
+
+<h3>Purchasing or accepting large born-digital donations</h3>
+
+<h3>Research data</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/21">
+<h1>BACKUPS</h1>
+
+<h1>!=</h1>
+
+<h1>DIGITAL PRESERVATION</h1>
+
+<p class="notes">This is something I seemingly have to combat over and over again on the hard IT and administration side of things. Backups are NOT digital preservation. Let's say that one more time. BACKUPS ARE NOT DIGITAL PRESERVATION. Backups are a part of digital preservation, but have a backup is not digital preservation. I will repeat myself one more time, Long-term preservation of digital content requires active management, which requires facilities for storing digital content online, monitoring its fixity, and migrating to new formats over time.</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/22">
+<h1>Storage Hierarchies</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/23">
+<p class="notes">Print libraries have used a hierarchical model for storing content for many years. High use material is kept on reserve. Core collections are kept in stacks close to users, and low-use material are kept in off-site storage facilities. Storage requirements for digital libraries similarly map to hierarchical terms as well. In this generalized graphic, we have high-availability services (indexes and transactional databases) at the top, beneath that we have we have content that researchers and students use on a daily basis (journal articles, eBooks, and other published resources), then at the bottom we have tape storage services that provide high-capacity, low-cost replication, and off-site distribution of the data with very lengthy retrieval times.</p>
+
+<p><img src="./file/slides/images/storageHierarchies.png" width="800" height="560" alt="images/storageHierarchies.png"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/24">
+<p class="notes">Yep, I totally skipped over one. Archival storage of digital objects requires storage with very high-capacity, mid-range retrieval speeds, all at a low cost. This type of storage is generally very difficult for libraries to acquire. It is not normally available through central IT, and the commercial options have lots of drawbacks. Let's see what our options are.</p>
+
+<p><img src="./file/slides/images/storageHierarchies_zoom.png" width="800" height="175" alt="images/storageHierarchies_zoom.png"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/25">
+<p class="notes">S3 is Amazon's established service for high availability cloud storage. If I decided to use S3 for that 20TB collection I mentioned earlier, I'd be looking at a $85k/yr bill. In the context of dark archiving, Glacier is of great interested with its $10/TB price point. But, it is a mostly untested service for archiving digital objects given the bandwidth costs. For example, to perform fixity checks once a year on 150TB, it would cost approximately $27,000.</p>
+
+<p><img src="./file/slides/images/aws_logo.png" width="800" height="295" alt="images/aws_logo.png"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/26">
+<p class="notes">Rackspace is a cloud services company that provides services very similar to Amazon AWS, and mimics Amazon's APIs. Pricing is very similar to Amazon's S3 services - so, something like that $85k/yr price point for the 20TB collection. Currently they do not offer a comparable service to Glacier.</p>
+
+<p><img src="./file/slides/images/rackspace_logo.jpg" width="700" height="272" alt="images/rackspace_logo.jpg"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/27">
+<p class="notes">Backblaze is a low-cost backup service designed for individual consumers. As a consumer solution, it is not a viable option for library archiving needs. Their price point of $4/month for unlimited sets is very appealing, but the service is tied to a single MAC address.</p>
+
+<p><img src="./file/slides/images/backblaze_logo.jpg" width="600" height="200" alt="images/backblaze_logo.jpg"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/28">
+<p class="notes">DuraCloud resells space from Amazon S3 (I believe Glacier now), Rackspace, San Diego Supercomputer Centre (see where we're going with this :-) ). It adds digital preservation &amp; management tools and increased levels of redundancy. Currently their prices range from $1,300 to $6,900 per terabyte depending on volume and options.</p>
+
+<p><img src="./file/slides/images/duracloud_logo.png" width="800" height="279" alt="images/duracloud_logo.png"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/29">
+<p class="notes">Portico has been discussing, for several years, the viability of offering archival services for locally created content in addition to their existing role as an archive for publishers' output. The last update to the project that I am aware of was published on the Portico site in 2009. So, none of these look very appealing once you take a good hard look at them. Oh yeah, they're all American too. :-) So, what are we to do?</p>
+
+<p><img src="./file/slides/images/portico_logo.jpg" width="598" height="556" alt="images/portico_logo.jpg"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/30">
+<h1>Community Storage Clouds</h1>
+
+<p class="notes">Private or community based storage clouds are what we're looking at as an alternative to commercial cloud services. By using an open source stack like Openstack (which John will talk about more in a bit), we would not be tied to a particular hardware vendor, thereby allowing us to build our own solution with commodity hardware. Some more advantages include: reducing bandwidth charges, and allowing us to maintain physical control over hardware.</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/01-nruest/31">
+<p class="notes">COMPONENTS (read the points): 1) off-the-shelf storage arrays using consumer-grade disk drives 2) middleware takes care of replication and automatic restoration of data from failed disks 3) routing data across geographic areas 4) Openstack API which is basically the S3 API 5) Remote management -- web based interface for users/institutions 6) scale out to 100s of petabytes 7) Now over to John to talk more about a potential hardware and software solutions.</p>
+
+<h1>Components</h1>
+
+<h3>Commodity hardware</h3>
+
+<h3>Middleware replication and restoration</h3>
+
+<h3>Geographic diversification</h3>
+
+<h3>Block and object storage using a common API</h3>
+
+<h3>Remote management</h3>
+
+<h3>Scalabiility</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/02-jbfink/1">
+<p><img src="./file/slides/images/pod-schematic.jpg" width="420" height="600" alt="images/pod-schematic.jpg"/>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/02-jbfink/2">
+<p><img src="./file/slides/images/box-closed.jpg" width="667" height="500" alt="images/box-closed.jpg"/>
+
+<p class="notes">So this company Backblaze, which is itself a cloud hosting provider ala Dropbox, Amazon etc. etc., did something sort of amazing. They engineered a relatively-super cheap box that is designed to be populated with cheap-ish desktop drives.  <em>Then</em> they released the design of the box for free for anybody to implement. Think open source software, but for hardware, like an Arduino. The cheapness of this allows them to treat the entire box as a FRU, so they have a chunk of them sitting around and when one box fails they can slide in another.</p>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/02-jbfink/3">
+<p><img src="./file/slides/images/box-open.jpg" width="667" height="500" alt="images/box-open.jpg"/>
+
+<p class="notes">So here's a picture of the pod we have. It has 45 bays, of which we are currently using 15, but we plan on maxing out to 45 in production. At 3TB each, that gives us 135 TB of storage of a price at about $10k, compared to (I think?) $2 MILLION over three years for comparable storage on Amazon S3. The drives are nothing special, they're all just whatever you'd have in your desktop. This allows us to cut costs by big chunk by not buying server ready type drives. All it basically is is a normal desktop PC with a ton of drives in it and a bunch of sorta-redundant power supplies and fans and such. Turning it on sounds like a jet engine, so you don't want to have this on your desktop. It's a straight x86 machine, so whatever Linux or so you want to shove in it will work. Dig those rubber bands around the drives -- those are shock absorbers! </p>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="slides/02-jbfink/4">
+<h1>What is OpenStack?</h1>
+
+<ul>
+<li>"Infrastructure as a Service"</li>
+<li>"...massively scalable cloud operating system..."</li>
+<li>... oh god the cloud</li>
+</ul>
+
+<p class="notes">ask if people are confused. Ask if people are sick of the cloud yet. It's IaaS! What's IaaS?</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="slides/02-jbfink/5">
+<h1>With a local OpenStack you could...</h1>
+
+<ul>
+<li>... easily spin up server space for projects</li>
+<li>... do that fun Big Data stuff you've heard about</li>
+<li>... do lots of backups</li>
+</ul>
+
+<p class="notes">This might be a bit out there for most of us -- hard to think of use cases where you'd need be your own Amazon. But but but, in universities -- especially in universities without a heavy STEM or comp sci contingent -- there's a real possibility that the library can fill a role for computing infrastructure. As we move more and more into things that take a <em>lot</em> of space -- digital objects -- having large storage arrays locally makes more sense.</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="slides/02-jbfink/6">
+<h1>OpenStack Swift</h1>
+
+<p class="notes">We're primarily interested in Swift, which is the OpenStack S3-Alike. It's a massively scalable system in which files can be written to multiple spread out servers -- think a RAID array writ large. Most implementors of OpenStack Swift will have lots and lots of bricks. We're looking at two per site for three sites initially, in fitting with the FRU-able nature of the Backblaze pods.</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="slides/02-jbfink/7">
+<h1>How OpenStack Swift (and S3, and etc) differs from traditional storage</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="slides/02-jbfink/8">
+<h1>Traditional storage:</h1>
+
+<ul>
+<li>A drive (or logical group of drives)</li>
+<li>Namespace similar to existing (C:, /home)</li>
+<li>Not easily expandable/adjustable</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="slides/02-jbfink/9">
+<h1>OpenStack/swift/S3</h1>
+
+<ul>
+<li><em>Not</em> mounted as traditional drive</li>
+<li>Can be grown/shrunk more easily than, say, a RAID array</li>
+<li>exists 'out there'</li>
+<li>Is addressable via a REST interface</li>
+</ul>
+
+<p class="notes">This requires a <em>huge</em> change in how crusty old people like myself think about drives and storage. When I think storage, I think ok, I have /home or /tmp or whatever and I deal with it using UNIX commands like mv or cp. But for programming languages, this is less than ideal -- OpenStack and other RESTful things are not meant for <em>people</em> to be futzing around but programs, and it's much easier for someone to, say, write a Rails app that talks to OpenStack than to write one which has to write to a drive in the way we usually think about writing to drives.</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="slides/03-fin">
+<h1>Contact</h1>
+
+<p>Nick Ruest (Twitter: <a href="http://twitter.com/ruebot">@ruebot</a> / Github: <a href="http://github.com/ruebot">ruebot</a>)</p>
+
+<p>John Fink (Twitter: <a href="http://twitter.com/adr">@adr</a> / Github: <a href="http://github.com/jbfink">jbfink</a>)</p>
+
+<p><a href="hdl:link:to:yorkspace">Download slides</a></p>
+</div>
+</div></div>
+<div id="pauseScreen">
+  Paused !!!
+</div>
+
+</body>
+</html>
